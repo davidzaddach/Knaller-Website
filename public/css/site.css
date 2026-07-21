@@ -368,6 +368,67 @@ a {
   color: var(--ink);
 }
 
+.about-closing {
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.artist-section {
+  background: var(--ink-soft);
+  color: var(--paper);
+}
+
+.artist-grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .artist-grid {
+    grid-template-columns: 1fr 1.05fr;
+    gap: 3.5rem;
+  }
+}
+
+.artist-photo {
+  position: relative;
+  border-radius: calc(var(--radius) + 4px);
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.artist-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(123, 44, 191, 0.35);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.artist-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.artist-text p {
+  margin: 0 0 1.15rem;
+  color: rgba(247, 245, 242, 0.82);
+}
+
+.artist-text p.lead {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--paper);
+}
+
+.artist-section .section-title {
+  color: var(--paper);
+}
+
 .spotify-section {
   background: radial-gradient(ellipse 80% 60% at 50% 0%, #1a0a33 0%, var(--ink) 70%);
 }

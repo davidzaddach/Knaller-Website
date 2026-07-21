@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Knaller Soundsystem — Reggae, Dancehall, Live Shows.">
+  <title>Knaller Soundsystem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0f0a;
+      --fg: #f4f0e6;
+      --muted: #a8a090;
+      --accent: #ffd54a;
+      --accent2: #e63946;
+      --card: rgba(255, 255, 255, 0.06);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Outfit", system-ui, sans-serif;
+      background: radial-gradient(ellipse 120% 80% at 50% -20%, #1a3d1a 0%, var(--bg) 55%);
+      color: var(--fg);
+      line-height: 1.5;
+    }
+    .wrap {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 3rem 1.25rem 4rem;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: clamp(2.5rem, 10vw, 3.75rem);
+      font-weight: 800;
+      margin: 0 0 0.5rem;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, var(--accent), #fff 45%, var(--accent2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .tagline {
+      font-size: 1.15rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(255, 213, 74, 0.15);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+    .card h2 {
+      font-size: 1rem;
+      margin: 0 0 0.75rem;
+      color: var(--accent);
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    a.btn {
+      display: inline-block;
+      padding: 0.65rem 1.25rem;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    a.btn:hover { transform: translateY(-2px); }
+    a.primary {
+      background: var(--accent);
+      color: #1a1a1a;
+      box-shadow: 0 4px 24px rgba(255, 213, 74, 0.35);
+    }
+    a.secondary {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: var(--fg);
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="badge">Website in Arbeit</p>
+    <h1>Knaller Soundsystem</h1>
+    <p class="tagline">Reggae · Dancehall · Live · Vibes</p>
+
+    <div class="card">
+      <h2>Neueste Single</h2>
+      <p><strong>Shit ist Knaller</strong> — jetzt auf Spotify &amp; allen Plattformen.</p>
+    </div>
+
+    <div class="links">
+      <a class="btn primary" href="https://knallersound.netlify.app/" rel="noopener">Knaller Sound App</a>
+      <a class="btn secondary" href="https://www.instagram.com/knallersoundsystem/" rel="noopener">Instagram</a>
+      <a class="btn secondary" href="https://www.youtube.com/@Knallersoundsystem" rel="noopener">YouTube</a>
+    </div>
+
+    <footer>© Knaller Soundsystem</footer>
+  </div>
+</body>
+</html>

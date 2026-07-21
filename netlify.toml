@@ -1,2 +1,5 @@
 [build]
   publish = "public"
+
+# Kontaktformular: In Netlify → Site → Forms → Form notifications
+# E-Mail an creativeconsulting@gmx.de eintragen.

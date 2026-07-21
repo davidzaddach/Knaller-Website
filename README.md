@@ -1,28 +1,36 @@
 # Knaller Webseite
 
-Offizielle **Knaller Soundsystem**-Website (Marketing, Shows, Musik, Links).
+Einfache **One-Page-Website** für Knaller Sound / Knaller Soundsystem — premium, visuell, auf Deutsch.
 
-Getrennt von der [Knaller Sound App](https://github.com/davidzaddach/Knaller-Sound-App) (Soundboard-PWA unter [knallersound.netlify.app](https://knallersound.netlify.app/)).
+Getrennt von der [Knaller Sound App](https://github.com/davidzaddach/Knaller-Sound-App) (PWA: [knallersound.netlify.app](https://knallersound.netlify.app/)).
 
-## Struktur
+## Sektionen
 
-| Ordner | Inhalt |
-|--------|--------|
-| `public/` | Statische Site für Netlify |
-| `knaller_website_netlify_url.txt` | Production-URL (eine Zeile) |
+1. **Video-Header** — YouTube-Rotation (Shit ist Knaller, City Surfer)
+2. **Über uns** — Presse-Text + Foto
+3. **Spotify** — eingebetteter Artist-Player
+4. **Kontakt** — Netlify-Formular → `creativeconsulting@gmx.de`
 
-## Entwicklung
+Rechtliches: `impressum.html`, `datenschutz.html`
 
-Dateien in `public/` bearbeiten und lokal mit einem beliebigen Static-Server öffnen, z. B.:
+## Assets
+
+Brand-Dateien liegen unter `public/assets/` (Logo, Foto, Pantone Violet C als Referenz).
+
+## Lokal testen
 
 ```bash
 cd public && python3 -m http.server 8080
 ```
 
+Öffnen: http://localhost:8080
+
 ## Netlify
 
-- **Publish directory:** `public` (siehe `netlify.toml`)
-- **Git-Deploy:** Repo als privates Remote verbinden, Branch `main` → Production
-- **Manuell:** Ordner `public/` per [Netlify Drop](https://app.netlify.com/drop) hochladen
+- **Publish directory:** `public`
+- **Formular:** Nach dem Verbinden des Repos unter *Site configuration → Forms → Form notifications* die E-Mail **creativeconsulting@gmx.de** hinterlegen.
+- Production-URL in `knaller_website_netlify_url.txt` pflegen.
 
-Öffentliche URL in `knaller_website_netlify_url.txt` pflegen.
+## GitHub
+
+Privates Repo: https://github.com/davidzaddach/Knaller-Website

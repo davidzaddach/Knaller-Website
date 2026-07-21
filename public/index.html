@@ -3,122 +3,153 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Knaller Soundsystem — Reggae, Dancehall, Live Shows.">
-  <title>Knaller Soundsystem</title>
+  <meta name="description" content="Knaller Sound — Reggae, Dancehall, Afrobeats. Ju aka Knaller Soundsystem. Musik hören, Live buchen, Kontakt.">
+  <title>Knaller Sound — Knaller Soundsystem</title>
+  <link rel="icon" href="/assets/logo/knaller-mark.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #0a0f0a;
-      --fg: #f4f0e6;
-      --muted: #a8a090;
-      --accent: #ffd54a;
-      --accent2: #e63946;
-      --card: rgba(255, 255, 255, 0.06);
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: "Outfit", system-ui, sans-serif;
-      background: radial-gradient(ellipse 120% 80% at 50% -20%, #1a3d1a 0%, var(--bg) 55%);
-      color: var(--fg);
-      line-height: 1.5;
-    }
-    .wrap {
-      max-width: 40rem;
-      margin: 0 auto;
-      padding: 3rem 1.25rem 4rem;
-      text-align: center;
-    }
-    .badge {
-      display: inline-block;
-      font-size: 0.75rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 1rem;
-    }
-    h1 {
-      font-size: clamp(2.5rem, 10vw, 3.75rem);
-      font-weight: 800;
-      margin: 0 0 0.5rem;
-      letter-spacing: -0.02em;
-      background: linear-gradient(135deg, var(--accent), #fff 45%, var(--accent2));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-    .tagline {
-      font-size: 1.15rem;
-      color: var(--muted);
-      margin-bottom: 2rem;
-    }
-    .card {
-      background: var(--card);
-      border: 1px solid rgba(255, 213, 74, 0.15);
-      border-radius: 1rem;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      text-align: left;
-    }
-    .card h2 {
-      font-size: 1rem;
-      margin: 0 0 0.75rem;
-      color: var(--accent);
-    }
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      justify-content: center;
-      margin-top: 2rem;
-    }
-    a.btn {
-      display: inline-block;
-      padding: 0.65rem 1.25rem;
-      border-radius: 999px;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 0.95rem;
-      transition: transform 0.15s, box-shadow 0.15s;
-    }
-    a.btn:hover { transform: translateY(-2px); }
-    a.primary {
-      background: var(--accent);
-      color: #1a1a1a;
-      box-shadow: 0 4px 24px rgba(255, 213, 74, 0.35);
-    }
-    a.secondary {
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: var(--fg);
-    }
-    footer {
-      margin-top: 3rem;
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
-  <div class="wrap">
-    <p class="badge">Website in Arbeit</p>
-    <h1>Knaller Soundsystem</h1>
-    <p class="tagline">Reggae · Dancehall · Live · Vibes</p>
+  <a class="skip-link" href="#ueber-uns">Zum Inhalt springen</a>
 
-    <div class="card">
-      <h2>Neueste Single</h2>
-      <p><strong>Shit ist Knaller</strong> — jetzt auf Spotify &amp; allen Plattformen.</p>
-    </div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Knaller Sound Start">
+      <img src="/assets/logo/knaller-mark.png" width="40" height="40" alt="">
+      <span>Knaller Sound</span>
+    </a>
+    <nav aria-label="Abschnitte">
+      <ul class="nav-anchors">
+        <li><a href="#top">Video</a></li>
+        <li><a href="#ueber-uns">Über uns</a></li>
+        <li><a href="#spotify">Musik</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="links">
-      <a class="btn primary" href="https://knallersound.netlify.app/" rel="noopener">Knaller Sound App</a>
-      <a class="btn secondary" href="https://www.instagram.com/knallersoundsystem/" rel="noopener">Instagram</a>
-      <a class="btn secondary" href="https://www.youtube.com/@Knallersoundsystem" rel="noopener">YouTube</a>
-    </div>
+  <main id="top">
+    <section class="hero" aria-label="Video Header">
+      <div class="hero-video-wrap" id="hero-video-wrap"></div>
+      <div class="hero-content">
+        <img class="hero-logo" src="/assets/logo/knaller-logo.png" width="640" height="360" alt="Knaller Soundsystem">
+        <p class="hero-tagline">Premium. Energetisch. Modern. Musikgetrieben — Ju aka Knaller Soundsystem.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#spotify">Musik hören</a>
+          <a class="btn btn-ghost" href="#kontakt">Kontakt &amp; Booking</a>
+        </div>
+        <div class="hero-dots" id="hero-dots" aria-label="Video-Auswahl"></div>
+      </div>
+    </section>
 
-    <footer>© Knaller Soundsystem</footer>
-  </div>
+    <section class="section about" id="ueber-uns" aria-labelledby="about-title">
+      <div class="section-inner about-grid">
+        <figure class="about-photo">
+          <img src="/assets/images/ju-thiemo.jpg" width="1800" height="1255" alt="Ju und Thiemo — Knaller Soundsystem">
+        </figure>
+        <div class="about-text">
+          <p class="section-label">Über uns</p>
+          <h2 class="section-title" id="about-title">Wer wir sind</h2>
+          <p class="lead">Was passiert, wenn jemand, der Deutschrap in den 90ern mit aufgebaut hat, plötzlich nicht mehr zurück-, sondern nach vorne schaut — global, genreübergreifend, kompromisslos?</p>
+          <p>Genau das ist <strong>KNALLER SOUNDSYSTEM</strong>.</p>
+          <p>Hinter dem Projekt steht Ju aka João dos Santos, bekannt als Stimme von Massive Töne. Statt Legacy zu verwalten, geht er dahin, wo sich Musik gerade neu erfindet: nach Lissabon. Dorthin, wo Afrobeats, Baile Funk, Dancehall und europäische Clubkultur aufeinandertreffen.</p>
+          <p>KNALLER SOUNDSYSTEM ist kein klassisches Albumprojekt. Es ist ein Sound-Mix aus globaler Clubmusik, übersetzt durch eine der prägnantesten Stimmen im deutschen Hip-Hop. Sprache wird hier nicht nur erzählt, sondern gespielt. Texte sind mal direkt, mal ironisch, aber nie beliebig.</p>
+          <p>Live funktioniert das Projekt genauso konsequent wie im Studio: entweder als DJ-getriebenes Club-Set oder als Band-Performance, die den Sound physisch macht. Ju bringt dabei nicht nur Erfahrung mit, sondern Haltung.</p>
+          <p>Mit <strong>KNALLER SOUND</strong> baut er parallel sein eigenes Label auf und arbeitet gemeinsam mit Suki daran, neue Künstler zu fördern. Das erste Album erscheint diesen Sommer — persönlich, mutig, ohne Komfortzone.</p>
+          <p><strong>KNALLER SOUNDSYSTEM</strong> ist kein Retro-Move. Es ist ein Perspektivwechsel. Deutschrap trifft Welt — und klingt plötzlich nach Zukunft.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section spotify-section" id="spotify" aria-labelledby="spotify-title">
+      <div class="section-inner">
+        <p class="section-label">Spotify</p>
+        <h2 class="section-title" id="spotify-title">Jetzt reinhören</h2>
+        <div class="spotify-frame">
+          <div class="spotify-frame-inner">
+            <iframe
+              title="Knaller Soundsystem auf Spotify"
+              loading="lazy"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              src="https://open.spotify.com/embed/artist/32OORI4khivugUjORlih63?utm_source=generator&theme=0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="kontakt" aria-labelledby="contact-title">
+      <div class="section-inner contact-grid">
+        <div>
+          <p class="section-label">Kontakt</p>
+          <h2 class="section-title" id="contact-title">Schreib uns</h2>
+          <p class="contact-intro">Allgemeine Anfragen, Bookings, Kollaborationen, Presse oder Artist-Submissions — wir melden uns zeitnah zurück.</p>
+        </div>
+
+        <form
+          class="contact-form"
+          name="kontakt"
+          method="POST"
+          action="/danke.html"
+          data-netlify="true"
+          netlify-honeypot="website"
+        >
+          <input type="hidden" name="form-name" value="kontakt">
+          <p class="hp-field" aria-hidden="true">
+            <label>Website <input name="website" tabindex="-1" autocomplete="off"></label>
+          </p>
+
+          <div class="form-row two">
+            <label>
+              Name *
+              <input type="text" name="name" required autocomplete="name">
+            </label>
+            <label>
+              E-Mail *
+              <input type="email" name="email" required autocomplete="email">
+            </label>
+          </div>
+
+          <label>
+            Anliegen *
+            <select name="anliegen" required>
+              <option value="">Bitte wählen</option>
+              <option value="Allgemeine Anfrage">Allgemeine Anfrage</option>
+              <option value="Booking">Booking</option>
+              <option value="Kollaboration">Kollaboration</option>
+              <option value="Presse / Medien">Presse / Medien</option>
+              <option value="Artist Submission">Artist Submission</option>
+            </select>
+          </label>
+
+          <label>
+            Nachricht *
+            <textarea name="nachricht" required></textarea>
+          </label>
+
+          <label class="consent">
+            <input type="checkbox" name="datenschutz" value="akzeptiert" required>
+            <span>Ich habe die <a href="/datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung meiner Anfrage zu. *</span>
+          </label>
+
+          <button type="submit" class="btn btn-primary">Nachricht senden</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Rechtliches">
+      <a href="/impressum.html">Impressum</a>
+      <a href="/datenschutz.html">Datenschutz</a>
+      <a href="https://www.instagram.com/knallersoundsystem/" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.youtube.com/@Knallersoundsystem" rel="noopener noreferrer">YouTube</a>
+    </nav>
+    <p>© Knaller Sound / Knaller Soundsystem</p>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
 </body>
 </html>

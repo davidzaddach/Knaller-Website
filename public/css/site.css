@@ -5,6 +5,7 @@
   --ink: #070708;
   --ink-soft: #12121a;
   --paper: #f7f5f2;
+  --intro-band: #ddd4ef;
   --muted: #a39bb8;
   --radius: 1rem;
   --font-display: "Syne", system-ui, sans-serif;
@@ -222,8 +223,9 @@ a {
 }
 
 .hero-intro {
-  background: var(--paper);
+  background: var(--intro-band);
   padding: 2.5rem 1.25rem 3rem;
+  border-bottom: 1px solid rgba(68, 0, 153, 0.12);
 }
 
 .hero-intro-inner {

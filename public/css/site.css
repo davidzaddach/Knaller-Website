@@ -250,6 +250,7 @@ a {
   width: min(16rem, 78vw);
   margin: 0;
   flex-shrink: 0;
+  align-self: flex-end;
 }
 
 .hero-tagline {
@@ -322,13 +323,15 @@ a {
   }
 
   .hero-intro-inner {
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
+    justify-content: flex-start;
     gap: 2.5rem 3rem;
   }
 
   .hero-logo {
     width: min(14rem, 28vw);
+    align-self: center;
   }
 }
 

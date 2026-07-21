@@ -390,6 +390,37 @@ a {
   color: var(--ink);
 }
 
+.about-closing {
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.artist-section {
+  background: var(--ink-soft);
+  color: var(--paper);
+  border-top: 1px solid rgba(123, 44, 191, 0.25);
+}
+
+.artist-text {
+  max-width: 42rem;
+}
+
+.artist-text p {
+  margin: 0 0 1.15rem;
+  color: rgba(247, 245, 242, 0.82);
+}
+
+.artist-text p.lead {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--paper);
+}
+
+.artist-section .section-title {
+  color: var(--paper);
+}
+
 .spotify-section {
   background: radial-gradient(ellipse 80% 60% at 50% 0%, #1a0a33 0%, var(--ink) 70%);
 }

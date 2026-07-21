@@ -399,11 +399,41 @@ a {
 .artist-section {
   background: var(--ink-soft);
   color: var(--paper);
-  border-top: 1px solid rgba(123, 44, 191, 0.25);
 }
 
-.artist-text {
-  max-width: 42rem;
+.artist-grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .artist-grid {
+    grid-template-columns: 1fr 1.05fr;
+    gap: 3.5rem;
+  }
+}
+
+.artist-photo {
+  position: relative;
+  border-radius: calc(var(--radius) + 4px);
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.artist-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(123, 44, 191, 0.35);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.artist-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
 
 .artist-text p {

@@ -1,2 +1,1 @@
-# Netlify-Production-URL hier eintragen, sobald die Site verbunden ist.
-# Beispiel: https://knallersoundsystem.netlify.app/
+https://knallersoundsystem.netlify.app/

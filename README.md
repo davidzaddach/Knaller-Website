@@ -2,6 +2,8 @@
 
 Einfache **One-Page-Website** für Knaller Sound / Knaller Soundsystem — premium, visuell, auf Deutsch.
 
+**Live:** [https://knallersoundsystem.netlify.app/](https://knallersoundsystem.netlify.app/)
+
 Getrennt von der [Knaller Sound App](https://github.com/davidzaddach/Knaller-Sound-App) (PWA: [knallersound.netlify.app](https://knallersound.netlify.app/)).
 
 ## Sektionen
@@ -28,8 +30,8 @@ cd public && python3 -m http.server 8080
 ## Netlify
 
 - **Publish directory:** `public`
-- **Formular:** Nach dem Verbinden des Repos unter *Site configuration → Forms → Form notifications* die E-Mail **creativeconsulting@gmx.de** hinterlegen.
-- Production-URL in `knaller_website_netlify_url.txt` pflegen.
+- **Site:** `knallersoundsystem.netlify.app` (siehe `knaller_website_netlify_url.txt`)
+- **Formular:** *Site configuration → Forms → Form notifications* → E-Mail **creativeconsulting@gmx.de**
 
 ## GitHub
 

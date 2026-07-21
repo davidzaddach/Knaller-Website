@@ -344,6 +344,15 @@ a {
   color: var(--ink);
 }
 
+.about-lead {
+  max-width: 36rem;
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--ink);
+  margin: 0 0 2.75rem;
+}
+
 .about-grid {
   display: grid;
   gap: 2.5rem;

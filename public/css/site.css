@@ -233,7 +233,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .hero-intro-copy {
@@ -247,10 +247,11 @@ a {
 }
 
 .hero-logo {
-  width: min(16rem, 78vw);
+  width: min(22rem, 88vw);
   margin: 0;
   flex-shrink: 0;
   align-self: flex-end;
+  filter: drop-shadow(0 8px 32px rgba(0, 0, 0, 0.5));
 }
 
 .hero-tagline {
@@ -326,11 +327,10 @@ a {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-start;
-    gap: 2.5rem 3rem;
+    gap: 1.25rem 1.75rem;
   }
 
   .hero-logo {
-    width: min(14rem, 28vw);
     align-self: center;
   }
 }

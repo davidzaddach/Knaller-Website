@@ -1,6 +1,6 @@
 (function () {
   // Newest release first
-  const YOUTUBE_IDS = ["ms5RiABeN7g", "gta6omaCmQw", "AuoGRCvr2mU"];
+  const YOUTUBE_IDS = ["gta6omaCmQw", "ms5RiABeN7g", "AuoGRCvr2mU"];
   const ROTATE_MS = 18000;
 
   const wrap = document.getElementById("hero-video-wrap");

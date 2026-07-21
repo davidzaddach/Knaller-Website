@@ -345,7 +345,8 @@ a {
 }
 
 .about-lead {
-  max-width: 36rem;
+  width: 100%;
+  max-width: none;
   font-size: clamp(1.1rem, 2.5vw, 1.35rem);
   font-weight: 600;
   line-height: 1.45;

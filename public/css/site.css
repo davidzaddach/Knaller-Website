@@ -60,13 +60,21 @@ a {
   position: fixed;
   inset: 0 0 auto;
   z-index: 50;
-  height: var(--header-h);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.25rem;
-  background: linear-gradient(to bottom, rgba(7, 7, 8, 0.85), transparent);
+  min-height: var(--header-h);
+  padding: 0.85rem 1rem 0.85rem 1.25rem;
+  background: linear-gradient(to bottom, rgba(7, 7, 8, 0.72), transparent);
   pointer-events: none;
+  transition: padding 0.25s ease, background 0.25s ease;
+}
+
+.site-header.is-compact {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: var(--header-h);
+  min-height: 0;
 }
 
 .site-header a,
@@ -77,22 +85,36 @@ a {
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
   text-decoration: none;
   color: inherit;
 }
 
-.brand img {
-  width: 2.5rem;
-  height: auto;
+.brand-logo {
+  display: block;
+  width: auto;
+  height: 3.75rem;
+  max-width: min(18rem, 62vw);
+  object-fit: contain;
+  object-position: left center;
+  transition: height 0.25s ease, max-width 0.25s ease;
+  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.35));
 }
 
-.brand span {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 0.95rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+.site-header.is-compact .brand-logo {
+  height: 2.35rem;
+  max-width: min(11rem, 42vw);
+}
+
+@media (min-width: 768px) {
+  .brand-logo {
+    height: 4.35rem;
+    max-width: 20rem;
+  }
+
+  .site-header.is-compact .brand-logo {
+    height: 2.75rem;
+    max-width: 13rem;
+  }
 }
 
 .nav-anchors {

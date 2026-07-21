@@ -1,4 +1,16 @@
 (function () {
+  const header = document.querySelector(".site-header");
+  if (header) {
+    const compactAt = 64;
+    const syncHeader = () => {
+      header.classList.toggle("is-compact", window.scrollY > compactAt);
+    };
+    syncHeader();
+    window.addEventListener("scroll", syncHeader, { passive: true });
+  }
+})();
+
+(function () {
   // Newest release first
   const YOUTUBE_IDS = ["gta6omaCmQw", "ms5RiABeN7g", "AuoGRCvr2mU"];
   const ROTATE_MS = 18000;

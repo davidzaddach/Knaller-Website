@@ -352,6 +352,7 @@ a {
   line-height: 1.45;
   color: var(--ink);
   margin: 0 0 2.75rem;
+  text-align: center;
 }
 
 .about-grid {
